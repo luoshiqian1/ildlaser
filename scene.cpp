@@ -1,4 +1,4 @@
-#include "scene.h"
+﻿#include "scene.h"
 
 #include <QGraphicsScene>
 #include <QGraphicsView>

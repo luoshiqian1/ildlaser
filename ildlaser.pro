@@ -4,28 +4,47 @@
 #
 #-------------------------------------------------
 
-QT       += core gui
+QT       += core gui serialport
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
 TARGET = ildlaser
 TEMPLATE = app
 
-RC_FILE = logo.rc
+INCLUDEPATH += $$PWD/include/QsLog/QsLog.h \
+               $$PWD/include/QsLog/QsLogDest.h \
+               $$PWD/include/QsLog/QsLogDestConsole.h \
+               $$PWD/include/QsLog/QsLogDestFile.h \
+               $$PWD/include/QsLog/QsLogDestFunctor.h \
+               $$PWD/include/QsLog/QsLogDisableForThisFile.h \
+               $$PWD/include/QsLog/QsLogLevel.h
+
+LIBS += QsLog2.lib
 
 SOURCES += main.cpp\
         mainwindow.cpp \
     scene.cpp \
     tools.cpp \
     testtool.cpp \
-    serialporttools.cpp
+    serialthread.cpp \
+    gam.cpp \
+    log.cpp
 
 HEADERS  += mainwindow.h \
     scene.h \
     tools.h \
     common.h \
     testtool.h \
-    serialporttools.h
+    serialthread.h \
+    gam.h \
+    log.h \
+    qslog/QsLog.h \
+    qslog/QsLogDest.h \
+    qslog/QsLogDestConsole.h \
+    qslog/QsLogDestFile.h \
+    qslog/QsLogDestFunctor.h \
+    qslog/QsLogDisableForThisFile.h \
+    qslog/QsLogLevel.h
 
 FORMS    += mainwindow.ui \
     testtool.ui

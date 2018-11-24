@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
  <class>testtool</class>
  <widget class="QDialog" name="testtool">
@@ -35,8 +35,8 @@
   <widget class="QPushButton" name="btn_scan">
    <property name="geometry">
     <rect>
-     <x>340</x>
-     <y>250</y>
+     <x>420</x>
+     <y>340</y>
      <width>99</width>
      <height>27</height>
     </rect>
@@ -48,8 +48,8 @@
   <widget class="QLabel" name="lb_x0">
    <property name="geometry">
     <rect>
-     <x>80</x>
-     <y>70</y>
+     <x>200</x>
+     <y>160</y>
      <width>21</width>
      <height>17</height>
     </rect>
@@ -61,8 +61,8 @@
   <widget class="QLabel" name="lb_y0">
    <property name="geometry">
     <rect>
-     <x>200</x>
-     <y>70</y>
+     <x>320</x>
+     <y>160</y>
      <width>21</width>
      <height>17</height>
     </rect>
@@ -74,8 +74,8 @@
   <widget class="QLabel" name="lb_y1">
    <property name="geometry">
     <rect>
-     <x>200</x>
-     <y>110</y>
+     <x>320</x>
+     <y>200</y>
      <width>21</width>
      <height>17</height>
     </rect>
@@ -87,8 +87,8 @@
   <widget class="QLabel" name="lb_x1">
    <property name="geometry">
     <rect>
-     <x>80</x>
-     <y>110</y>
+     <x>200</x>
+     <y>200</y>
      <width>21</width>
      <height>17</height>
     </rect>
@@ -100,8 +100,8 @@
   <widget class="QLabel" name="lb_y2">
    <property name="geometry">
     <rect>
-     <x>200</x>
-     <y>150</y>
+     <x>320</x>
+     <y>240</y>
      <width>21</width>
      <height>17</height>
     </rect>
@@ -113,8 +113,8 @@
   <widget class="QLabel" name="lb_x2">
    <property name="geometry">
     <rect>
-     <x>80</x>
-     <y>150</y>
+     <x>200</x>
+     <y>240</y>
      <width>21</width>
      <height>17</height>
     </rect>
@@ -126,8 +126,8 @@
   <widget class="QLabel" name="lb_y3">
    <property name="geometry">
     <rect>
-     <x>200</x>
-     <y>190</y>
+     <x>320</x>
+     <y>280</y>
      <width>21</width>
      <height>17</height>
     </rect>
@@ -139,8 +139,8 @@
   <widget class="QLabel" name="lb_x3">
    <property name="geometry">
     <rect>
-     <x>80</x>
-     <y>190</y>
+     <x>200</x>
+     <y>280</y>
      <width>21</width>
      <height>17</height>
     </rect>
@@ -152,81 +152,178 @@
   <widget class="QTextEdit" name="te_x">
    <property name="geometry">
     <rect>
-     <x>110</x>
-     <y>70</y>
+     <x>230</x>
+     <y>160</y>
      <width>71</width>
      <height>21</height>
     </rect>
+   </property>
+   <property name="verticalScrollBarPolicy">
+    <enum>Qt::ScrollBarAlwaysOff</enum>
+   </property>
+   <property name="horizontalScrollBarPolicy">
+    <enum>Qt::ScrollBarAlwaysOff</enum>
    </property>
   </widget>
   <widget class="QTextEdit" name="te_y">
    <property name="geometry">
     <rect>
-     <x>230</x>
-     <y>70</y>
+     <x>350</x>
+     <y>160</y>
      <width>71</width>
      <height>21</height>
     </rect>
+   </property>
+   <property name="verticalScrollBarPolicy">
+    <enum>Qt::ScrollBarAlwaysOff</enum>
+   </property>
+   <property name="horizontalScrollBarPolicy">
+    <enum>Qt::ScrollBarAlwaysOff</enum>
    </property>
   </widget>
   <widget class="QTextEdit" name="te_x_2">
    <property name="geometry">
     <rect>
-     <x>110</x>
-     <y>110</y>
+     <x>230</x>
+     <y>200</y>
      <width>71</width>
      <height>21</height>
     </rect>
+   </property>
+   <property name="verticalScrollBarPolicy">
+    <enum>Qt::ScrollBarAlwaysOff</enum>
+   </property>
+   <property name="horizontalScrollBarPolicy">
+    <enum>Qt::ScrollBarAlwaysOff</enum>
    </property>
   </widget>
   <widget class="QTextEdit" name="te_x_3">
    <property name="geometry">
     <rect>
-     <x>110</x>
-     <y>150</y>
+     <x>230</x>
+     <y>240</y>
      <width>71</width>
      <height>21</height>
     </rect>
+   </property>
+   <property name="verticalScrollBarPolicy">
+    <enum>Qt::ScrollBarAlwaysOff</enum>
+   </property>
+   <property name="horizontalScrollBarPolicy">
+    <enum>Qt::ScrollBarAlwaysOff</enum>
    </property>
   </widget>
   <widget class="QTextEdit" name="te_x_4">
    <property name="geometry">
     <rect>
-     <x>110</x>
-     <y>190</y>
+     <x>230</x>
+     <y>280</y>
      <width>71</width>
      <height>21</height>
     </rect>
+   </property>
+   <property name="verticalScrollBarPolicy">
+    <enum>Qt::ScrollBarAlwaysOff</enum>
+   </property>
+   <property name="horizontalScrollBarPolicy">
+    <enum>Qt::ScrollBarAlwaysOff</enum>
    </property>
   </widget>
   <widget class="QTextEdit" name="te_y_2">
    <property name="geometry">
     <rect>
-     <x>230</x>
-     <y>110</y>
+     <x>350</x>
+     <y>200</y>
      <width>71</width>
      <height>21</height>
     </rect>
+   </property>
+   <property name="verticalScrollBarPolicy">
+    <enum>Qt::ScrollBarAlwaysOff</enum>
+   </property>
+   <property name="horizontalScrollBarPolicy">
+    <enum>Qt::ScrollBarAlwaysOff</enum>
    </property>
   </widget>
   <widget class="QTextEdit" name="te_y_3">
    <property name="geometry">
     <rect>
-     <x>230</x>
-     <y>150</y>
+     <x>350</x>
+     <y>240</y>
      <width>71</width>
      <height>21</height>
     </rect>
+   </property>
+   <property name="verticalScrollBarPolicy">
+    <enum>Qt::ScrollBarAlwaysOff</enum>
+   </property>
+   <property name="horizontalScrollBarPolicy">
+    <enum>Qt::ScrollBarAlwaysOff</enum>
    </property>
   </widget>
   <widget class="QTextEdit" name="te_y_4">
    <property name="geometry">
     <rect>
-     <x>230</x>
-     <y>190</y>
+     <x>350</x>
+     <y>280</y>
      <width>71</width>
      <height>21</height>
     </rect>
+   </property>
+   <property name="verticalScrollBarPolicy">
+    <enum>Qt::ScrollBarAlwaysOff</enum>
+   </property>
+   <property name="horizontalScrollBarPolicy">
+    <enum>Qt::ScrollBarAlwaysOff</enum>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="cb_serialport">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>110</y>
+     <width>83</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lb_x0_2">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>110</y>
+     <width>41</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>串口:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lb_makrresult">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>430</y>
+     <width>541</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btInit">
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>110</y>
+     <width>93</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>初始化</string>
    </property>
   </widget>
  </widget>

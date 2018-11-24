@@ -1,4 +1,4 @@
-#include "mainwindow.h"
+﻿#include "mainwindow.h"
 #include "ui_mainwindow.h"
 
 #include "scene.h"
@@ -12,7 +12,7 @@ MainWindow::MainWindow(QWidget *parent) :
 
 
 
-    this->setFixedSize(800,600);
+    this->setFixedSize(SCREEN_WIDTH,SCREEN_HIGH);
 
     myAc1 = new QAction(this);
     myAc1->setText(QString::fromLocal8Bit("新建"));
@@ -28,12 +28,12 @@ MainWindow::MainWindow(QWidget *parent) :
 
     myAc3 = new QAction(this);
     myAc3->setText(QString::fromLocal8Bit("另存为"));
-    myAc3->setStatusTip("This is ac3");
+    myAc3->setStatusTip("This is ac2");
     connect(myAc3, SIGNAL(triggered()), this, SLOT(pop3()));
 
     acShowTools = new QAction(this);
     acShowTools->setText(QString::fromLocal8Bit("测试工具"));
-    acShowTools->setStatusTip("测试工具");
+    acShowTools->setStatusTip(QString::fromLocal8Bit("测试工具"));
     connect(acShowTools, SIGNAL(triggered()), this, SLOT(showTools()));
 
     fileMenu = menuBar()->addMenu(QString::fromLocal8Bit("文件"));
@@ -56,11 +56,12 @@ MainWindow::MainWindow(QWidget *parent) :
     scene1->addText("ildlaser");
     scene1->setForegroundBrush(QColor(255,122,255,100));
     scene1->setBackgroundBrush(Qt::green);
-    scene1->setSceneRect(0,0,600,800);
+    scene1->setSceneRect(0,0,SCREEN_HIGH,SCREEN_WIDTH);
     view = new QGraphicsView(scene1);
-    view->setFixedSize(600, 800);
+    view->setFixedSize(SCREEN_HIGH, SCREEN_WIDTH);
 
 }
+
 
 void MainWindow::addScene()
 {
@@ -81,8 +82,6 @@ void MainWindow::pop1()
  //   m.setText("This is a messagebox for my action1.");
  //   m.exec();
     view->show();
-
-
 
 }
 

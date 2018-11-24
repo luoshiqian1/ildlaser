@@ -17,6 +17,7 @@ class MainWindow : public QMainWindow
 
 public:
     explicit MainWindow(QWidget *parent = 0);
+
     ~MainWindow();
 
 private slots:
@@ -47,6 +48,9 @@ private:
 
     QGraphicsScene *scene1;
     QGraphicsView *view;
+    const int SCREEN_WIDTH = 1024;
+    const int SCREEN_HIGH=768;
+
 };
 
 #endif // MAINWINDOW_H

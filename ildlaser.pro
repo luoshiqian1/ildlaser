@@ -28,7 +28,8 @@ SOURCES += main.cpp\
     testtool.cpp \
     serialthread.cpp \
     gam.cpp \
-    log.cpp
+    log.cpp \
+    plt.cpp
 
 HEADERS  += mainwindow.h \
     scene.h \
@@ -44,7 +45,8 @@ HEADERS  += mainwindow.h \
     qslog/QsLogDestFile.h \
     qslog/QsLogDestFunctor.h \
     qslog/QsLogDisableForThisFile.h \
-    qslog/QsLogLevel.h
+    qslog/QsLogLevel.h \
+    plt.h
 
 FORMS    += mainwindow.ui \
     testtool.ui

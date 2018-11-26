@@ -36,7 +36,7 @@ void Log::initLogger()
 
     // 2. add two destinations
     DestinationPtr fileDestination(DestinationFactory::MakeFileDestination(
-      sLogPath, EnableLogRotation, MaxSizeBytes(512), MaxOldLogCount(2)));
+      sLogPath, EnableLogRotation, MaxSizeBytes(51200), MaxOldLogCount(2)));
 
     DestinationPtr debugDestination(DestinationFactory::MakeDebugOutputDestination());
     DestinationPtr functorDestination(DestinationFactory::MakeFunctorDestination(&myLogFunction));

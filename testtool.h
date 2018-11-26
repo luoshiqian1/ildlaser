@@ -30,6 +30,8 @@ private slots:
 
     void on_btInit_clicked();
 
+    void on_btreadfile_clicked();
+
 private:
     Ui::testtool *ui;
     SerialThread thread;

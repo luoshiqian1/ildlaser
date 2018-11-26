@@ -3,6 +3,7 @@
 #include "serialthread.h"
 #include "gam.h"
 #include "log.h"
+#include "plt.h"
 
 Log mylog;
 QVector<GamStu> array(4);
@@ -44,7 +45,7 @@ void testtool::ildlaserInit()
 
     for (int i=0;i<4;i++)
     {
-        Gam::gamInit(&arrayX[i]);
+        Gam::gamInit(&array[i]);
         Gam::gamInit(&arrayY[i]);
     }
 }
@@ -173,4 +174,10 @@ void testtool::on_btInit_clicked()
 
     if (!tgam.sendCheck(currentPortName))
         return;
+}
+
+void testtool::on_btreadfile_clicked()
+{
+    Plt plt;
+    plt.analyze("circle.plt");
 }
